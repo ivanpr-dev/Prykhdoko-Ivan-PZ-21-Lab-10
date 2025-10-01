@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffff, #e6e6fa);
+            font-family: 'Segoe UI', sans-serif;
+            padding: 32px;
+        }
+
+        .fancy-heading::before {
+            content: "🌟";
+            color: #6a5acd;
+            font-size: 20px;
+        }
+
+        .fancy-heading {
+            text-shadow: 2px 2px 5px rgba(106, 90, 205, 0.5);
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+
+        .box {
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            padding: 16px;
+            background-color: #fff;
+            margin-bottom: 16px;
+        }
+
+        .button {
+            border-radius: 25px;
+            padding: 8px 16px;
+            background: linear-gradient(to right, #ff7f50, #ff6347);
+            color: white;
+            border: none;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px rgba(255, 99, 71, 0.5);
+            transition: transform 0.2s ease;
+        }
+
+        .button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="fancy-heading">Заголовок</h1>
+    <div class="box">Це дуже гарний блок зі спецефектами і подібним</div>
+    <button class="button" onclick="document.location='https://youtube.com/watch?v=dQw4w9WgXcQ'">Кнопка що працює</button>
+</body>
+</html>
